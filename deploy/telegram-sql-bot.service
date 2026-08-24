@@ -1,0 +1,15 @@
+[Unit]
+Description=Agentic RAG Text-to-SQL Telegram Bot
+After=network.target postgresql.service
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/telegram-sql-bot/src
+ExecStart=/home/ubuntu/telegram-sql-bot/venv/bin/python /home/ubuntu/telegram-sql-bot/src/bot.py
+Restart=always
+RestartSec=5
+EnvironmentFile=/home/ubuntu/telegram-sql-bot/.env
+
+[Install]
+WantedBy=multi-user.target
