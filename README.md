@@ -1,5 +1,7 @@
 # Agentic RAG Text-to-SQL Telegram Bot
 
+Live bot: https://t.me/agenticragdb_bot
+
 A Telegram bot that turns natural language questions into SQL queries, runs them
 against a Postgres database, and returns the results as a PDF report.
 
